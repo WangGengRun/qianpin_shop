@@ -1,0 +1,22 @@
+server:
+  port: 9009
+feign:
+  hystrix:
+    enabled: true
+
+#hystrix 配置
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          #如果enabled设置为false，则请求超时交给ribbon控制
+          enabled: true
+        isolation:
+          strategy: SEMAPHORE
+
+# minio 文件存储配置信息
+minio:
+  endpoint: http://192.168.88.133:9000
+  accesskey: minioadmin
+  secretKey: minioadmin
