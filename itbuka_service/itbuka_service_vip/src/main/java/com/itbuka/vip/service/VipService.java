@@ -15,4 +15,14 @@ public interface VipService extends IService<Vip> {
 
 
     List<Vip> selectList(Vip vip);
+
+    List<Vip> selAll();
+
+    int insert(Vip vip);
+
+    void delete(String ids);
+
+    Integer status(Long id, Integer status);
+
+    int update(Vip vip);
 }
