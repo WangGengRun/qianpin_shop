@@ -1,6 +1,6 @@
 spring:
   application:
-    name: sysgateway
+    name: gateway
   cloud:
     nacos:
       discovery:
@@ -22,12 +22,19 @@ spring:
             - Path=/goods/**
           filters:
             - StripPrefix= 1
+            - name: RequestRateLimiter #请求数限流 名字不能随便写
+              args:
+                key-resolver: "#{@ipKeyResolver}"
+                redis-rate-limiter.replenishRate: 1 #令牌桶每秒填充平均速率
+                redis-rate-limiter.burstCapacity: 1 #令牌桶总容量
         - id: minio
           uri: lb://minio
           predicates:
             - Path=/minio/**
           filters:
             - StripPrefix= 1
+  redis:
+    host: 192.168.88.133
 server:
   port: 9101
 #hystrix 配置

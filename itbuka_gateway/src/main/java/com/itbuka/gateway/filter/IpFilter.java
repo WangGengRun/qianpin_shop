@@ -1,4 +1,4 @@
-package com.itbuka.gateway;
+package com.itbuka.gateway.filter;
 
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;
 import org.springframework.cloud.gateway.filter.GlobalFilter;
@@ -12,10 +12,9 @@ public class IpFilter implements GlobalFilter, Ordered {
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
         System.out.println("经过第1个过滤器IpFilter");
-        String host = exchange.getRequest().getURI().getHost();       System.out.println(host);
+        System.out.println(exchange.getRequest().getURI().getHost());
         return chain.filter(exchange);
     }
-
     @Override
     public int getOrder() {
         return 1;
