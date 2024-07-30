@@ -15,6 +15,7 @@
         <module>itbuka_service_goods</module>
         <module>itbuka_service_minio</module>
         <module>itbuka_service_vip</module>
+        <module>itbuka_service_user</module>
     </modules>
 
     <properties>
