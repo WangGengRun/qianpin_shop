@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itbuka.goods.mapper.ProductMapper">
+
+    <resultMap id="BaseResultMap" type="com.itbuka.goods.domain.Product">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="price" column="price" jdbcType="DECIMAL"/>
+            <result property="salesModel" column="sales_model" jdbcType="VARCHAR"/>
+            <result property="type" column="type" jdbcType="VARCHAR"/>
+            <result property="status" column="status" jdbcType="INTEGER"/>
+            <result property="audit" column="audit" jdbcType="INTEGER"/>
+            <result property="shopName" column="shop_name" jdbcType="VARCHAR"/>
+            <result property="classifyId" column="classify_id" jdbcType="BIGINT"/>
+            <result property="selling" column="selling" jdbcType="VARCHAR"/>
+            <result property="parameter" column="parameter" jdbcType="VARCHAR"/>
+            <result property="unitMeasure" column="unit_measure" jdbcType="VARCHAR"/>
+            <result property="img" column="img" jdbcType="VARCHAR"/>
+            <result property="video" column="video" jdbcType="VARCHAR"/>
+            <result property="description" column="description" jdbcType="VARCHAR"/>
+            <result property="isDelete" column="is_delete" jdbcType="INTEGER"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="brandId" column="brand_id" jdbcType="BIGINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,name,price,
+        sales_model,type,status,
+        audit,shop_name,classify_id,
+        selling,parameter,unit_measure,
+        img,video,description,
+        is_delete,create_time,update_time,
+        brand_id
+    </sql>
+</mapper>
