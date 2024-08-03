@@ -38,6 +38,7 @@ public class LoginFilter implements GlobalFilter, Ordered {
             //解析失败，拒绝访问
             response.setStatusCode(HttpStatus.UNAUTHORIZED);
             return response.setComplete();
+
         }
         return chain.filter(exchange);
     }

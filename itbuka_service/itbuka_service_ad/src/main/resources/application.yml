@@ -1,8 +1,8 @@
 server:
-  port: 9011
+  port: 9015
 spring:
   application:
-    name: goods
+    name: ad
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://192.168.88.139:3306/b0394?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai

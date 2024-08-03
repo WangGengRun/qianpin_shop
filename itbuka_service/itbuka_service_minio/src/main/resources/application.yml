@@ -17,6 +17,6 @@ hystrix:
 
 # minio 文件存储配置信息
 minio:
-  endpoint: http://192.168.88.133:9000
+  endpoint: http://192.168.88.139:9000
   accesskey: minioadmin
   secretKey: minioadmin
