@@ -1,10 +1,9 @@
 server:
-  port: 9015
+  port: 9007
+  max-http-header-size: 20480
 spring:
-  rabbitmq:
-    host: 192.168.88.139
   application:
-    name: ad
+    name: user
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://192.168.88.139:3306/b0394?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
@@ -13,6 +12,8 @@ spring:
 feign:
   hystrix:
     enabled: true
+  httpclient:
+    connection-timeout: 10000
 
 #hystrix 配置
 hystrix:
@@ -24,6 +25,5 @@ hystrix:
           enabled: true
         isolation:
           strategy: SEMAPHORE
-
 mybatis-plus:
   mapper-locations: classpath*:/mapper/*.xml

@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>itbuka_service_ad</artifactId>
+    <artifactId>itbuka_service_search</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -18,13 +18,13 @@
     <dependencies>
         <dependency>
             <groupId>com.itbuka</groupId>
-            <artifactId>itbuka_common_db</artifactId>
+            <artifactId>itbuka_common</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
 
         <dependency>
             <groupId>com.itbuka</groupId>
-            <artifactId>itbuka_service_ad_api</artifactId>
+            <artifactId>itbuka_service_search_api</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
@@ -36,6 +36,10 @@
             <groupId>com.itbuka</groupId>
             <artifactId>itbuka_service_goods_api</artifactId>
             <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-elasticsearch</artifactId>
         </dependency>
     </dependencies>
 </project>

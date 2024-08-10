@@ -15,6 +15,7 @@
         <module>itbuka_service_goods_api</module>
         <module>itbuka_service_minio_api</module>
         <module>itbuka_service_ad_api</module>
+        <module>itbuka_service_search_api</module>
     </modules>
 
     <properties>

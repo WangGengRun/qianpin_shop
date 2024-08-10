@@ -136,12 +136,12 @@ public class UserController {
      */
     @PostMapping("/login")
     public Result login(@RequestBody User user) {
-        Integer login = iUserService.login(user.getUsername(), user.getPassword());
-        if (login == -2) {
+        String login = iUserService.login(user.getUsername(), user.getPassword());
+        if (login == "-2") {
             return Result.fail("用户名或密码错误");
-        } else if (login == -1) {
+        } else if (login == "-1") {
             return Result.fail("该用户不存在");
-        } else if (login == -3) {
+        } else if (login == "-3") {
             return Result.fail("该用户已停用");
         }
         return  Result.ok("登录成功");

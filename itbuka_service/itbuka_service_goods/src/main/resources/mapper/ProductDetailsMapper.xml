@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itbuka.goods.mapper.ProductDetailsMapper">
+
+    <resultMap id="BaseResultMap" type="com.itbuka.goods.domain.ProductDetails">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="specId" column="spec_id" jdbcType="VARCHAR"/>
+            <result property="num" column="num" jdbcType="INTEGER"/>
+            <result property="weight" column="weight" jdbcType="DECIMAL"/>
+            <result property="price" column="price" jdbcType="DECIMAL"/>
+            <result property="inventory" column="inventory" jdbcType="INTEGER"/>
+            <result property="img" column="img" jdbcType="VARCHAR"/>
+            <result property="productId" column="product_id" jdbcType="BIGINT"/>
+            <result property="isDelete" column="is_delete" jdbcType="INTEGER"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,spec_id,num,
+        weight,price,inventory,
+        img,product_id,is_delete,
+        create_time,update_time
+    </sql>
+    <update id="reduceStock">
+        update goods_product_details
+        set inventory = inventory-#{num}
+        where id = #{productId}
+          and inventory >= #{num}
+    </update>
+</mapper>

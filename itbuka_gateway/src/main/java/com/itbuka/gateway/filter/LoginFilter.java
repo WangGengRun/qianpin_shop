@@ -23,7 +23,7 @@ public class LoginFilter implements GlobalFilter, Ordered {
         //判断是不是登录接口
         if (path.contains("/login")) {
             return chain.filter(exchange);
-        }
+         }
         //判断有没有token
         String token = request.getHeaders().getFirst("token");
         if (token == null) {

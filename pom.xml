@@ -13,6 +13,7 @@
         <module>itbuka_service_api</module>
         <module>itbuka_common</module>
         <module>itbuka_common_db</module>
+        <module>itbuka_canal</module>
     </modules>
     <packaging>pom</packaging>
 
