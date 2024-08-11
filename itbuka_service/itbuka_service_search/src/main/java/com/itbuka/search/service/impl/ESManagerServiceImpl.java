@@ -1,5 +1,6 @@
 package com.itbuka.search.service.impl;
 
+import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.itbuka.damian.DetailIndex;
 import com.itbuka.goods.domain.Detail;
@@ -28,13 +29,19 @@ private ElasticsearchTemplate elasticsearchTemplate;
 
     @Override
     public void importById(String id) {
-        //查询商品数据
-        Detail data=goodsFeign.findDetail(Long.valueOf(id)).getData();
-        //商品转成索引库类型
-        DetailIndex detailIndex = JSONObject.parseObject(JSONObject.toJSONString(data), DetailIndex.class);
+        //获取mysql中数据
+        Detail data = goodsFeign.findDetail(Long.valueOf(id)).getData();
+        //转成索引类型对象并设置id
+        String jsonString = JSON.toJSONString(data);
+        DetailIndex detailIndex = JSONObject.parseObject(jsonString, DetailIndex.class);
         //保存索引库
         esManagerMapper.save(detailIndex);
+    }
 
+
+    @Override
+    public void deleteById(String id) {
+        esManagerMapper.deleteById(id);
     }
 }
 

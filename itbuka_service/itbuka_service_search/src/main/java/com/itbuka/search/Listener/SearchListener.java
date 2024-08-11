@@ -17,9 +17,15 @@ import java.util.Map;
 public class SearchListener {
     @Autowired
     private ESManagerService esManagerService;
+    //上架索引库
     @RabbitListener(queues = RabbitConfig.GOODS_QUEUE)
     public void goods(String id){
     esManagerService.createMappingAndIndex();
     esManagerService.importById(id);
+    }
+    //下架索引库
+    @RabbitListener(queues = RabbitConfig.DOWN_GOODS_QUEUE)
+    public void downGoods(String id){
+        esManagerService.deleteById(id);
     }
 }

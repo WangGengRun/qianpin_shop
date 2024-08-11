@@ -9,5 +9,9 @@ public interface ESManagerService {
      * 导入全部数据到ES索引库
      */
     void importById(String id);
+    /**
+     *  删除数据到ES索引库
+     */
+    void deleteById(String id);
 }
 

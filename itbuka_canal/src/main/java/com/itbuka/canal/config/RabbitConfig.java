@@ -12,6 +12,7 @@ public class RabbitConfig {
     public static final String AD_QUEUE = "ad.queue";
     public static final String AD_QUEUE1 = "ad.queue1";
     public static final String GOODS_QUEUE = "goods.queue";
+    public static final String DOWN_GOODS_QUEUE = "down_goods.queue";
     //交换机
     public static final String AD_EXCHANGE = "ad.exchange";
     public static final String GOODS_EXCHANGE = "goods.exchange";
@@ -35,6 +36,11 @@ public class RabbitConfig {
     public Queue GOODS_QUEUE() {
         return new Queue(GOODS_QUEUE,true);
     }
+    @Bean(DOWN_GOODS_QUEUE)
+    public Queue DOWN_GOODS_QUEUE() {
+        return new Queue(DOWN_GOODS_QUEUE,true);
+    }
+
     //声明交换机
     @Bean(AD_EXCHANGE)
     public Exchange RABBIT_EXCHANGE() {
@@ -44,7 +50,7 @@ public class RabbitConfig {
     @Bean(GOODS_EXCHANGE)
     public Exchange GOODS_EXCHANGE() {
         //durable(true) 持久化，mq重启之后交换机还在
-        return ExchangeBuilder.fanoutExchange(GOODS_EXCHANGE).durable(true).build();
+        return ExchangeBuilder.directExchange(GOODS_EXCHANGE).durable(true).build();
     }
 
     //队列绑定交换机，指定routingKey
@@ -59,5 +65,9 @@ public class RabbitConfig {
     @Bean
     public Binding GOODS_EXCHANGE_QUEUE(@Qualifier(GOODS_QUEUE) Queue queue, @Qualifier(GOODS_EXCHANGE) Exchange exchange) {
         return BindingBuilder.bind(queue).to(exchange).with(GOODS_QUEUE).noargs();
+    }
+    @Bean
+    public Binding DOWN_GOODS_EXCHANGE_QUEUE(@Qualifier(DOWN_GOODS_QUEUE) Queue queue, @Qualifier(GOODS_EXCHANGE) Exchange exchange) {
+        return BindingBuilder.bind(queue).to(exchange).with(DOWN_GOODS_QUEUE).noargs();
     }
 }

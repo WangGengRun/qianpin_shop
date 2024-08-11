@@ -42,6 +42,12 @@ spring:
             - Path=/ad/**
           filters:
             - StripPrefix= 1
+        - id: search
+          uri: lb://search
+          predicates:
+            - Path=/search/**
+          filters:
+            - StripPrefix= 1
   redis:
     host: 192.168.88.139
 server:
