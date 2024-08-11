@@ -7,6 +7,8 @@ spring:
       cluster-nodes: 192.168.88.139:9300
   application:
     name: search
+  rabbitmq:
+    host: 192.168.88.139
 feign:
   hystrix:
     enabled: true

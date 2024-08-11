@@ -21,7 +21,5 @@ public class SearchListener {
     public void goods(String id){
     esManagerService.createMappingAndIndex();
     esManagerService.importById(id);
-
-
     }
 }
