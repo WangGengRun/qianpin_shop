@@ -144,7 +144,7 @@ public class UserController {
         } else if (login == "-3") {
             return Result.fail("该用户已停用");
         }
-        return  Result.ok("登录成功");
+        return  Result.ok("登录成功",login);
     }
 
 }
