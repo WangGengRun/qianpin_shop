@@ -14,6 +14,7 @@
         <module>itbuka_common</module>
         <module>itbuka_common_db</module>
         <module>itbuka_canal</module>
+        <module>itbuka_oauth</module>
     </modules>
     <packaging>pom</packaging>
 

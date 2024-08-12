@@ -1,0 +1,43 @@
+server:
+  port: 9200
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.88.139:8848 #Nacos服务注册中心地址
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.88.139:3306/oauth?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+  main:
+    allow-bean-definition-overriding: true #允许我们自己覆盖spring放入到IOC容器的对象
+  application:
+    name: auth
+  redis:
+    host: 192.168.88.139
+mybatis:
+  type-aliases-package: com.dpb.domain
+  mapper-locations: classpath:mapper/*.xml
+feign:
+  hystrix:
+    enabled: true
+#hystrix 配置
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          #如果enabled设置为false，则请求超时交给ribbon控制
+          enabled: true
+        isolation:
+          strategy: SEMAPHORE
+logging:
+  level:
+    com.dpb: debug
+auth:
+  ttl: 60  #token存储到redis的过期时间
+  clientId: itbuka    #客户端ID
+  clientSecret: 123456    #客户端秘钥
+  cookieDomain: localhost   #Cookie保存对应的域名
+  cookieMaxAge: -1          #Cookie过期时间，-1表示浏览器关闭则销毁

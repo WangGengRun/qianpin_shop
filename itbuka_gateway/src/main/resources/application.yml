@@ -48,6 +48,12 @@ spring:
             - Path=/search/**
           filters:
             - StripPrefix= 1
+        - id: auth
+          uri: lb://auth
+          predicates:
+            - Path=/auth/**
+          filters:
+            - StripPrefix= 1
   redis:
     host: 192.168.88.139
 server:

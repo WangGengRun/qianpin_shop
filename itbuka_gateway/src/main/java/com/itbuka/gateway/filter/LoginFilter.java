@@ -1,9 +1,12 @@
 package com.itbuka.gateway.filter;
 
 import com.itbuka.gateway.utils.JwtUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;
 import org.springframework.cloud.gateway.filter.GlobalFilter;
 import org.springframework.core.Ordered;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.http.HttpCookie;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.server.reactive.ServerHttpRequest;
 import org.springframework.http.server.reactive.ServerHttpResponse;
@@ -15,6 +18,8 @@ import java.util.Map;
 
 @Component
 public class LoginFilter implements GlobalFilter, Ordered {
+    @Autowired
+    private RedisTemplate redisTemplate;
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
         ServerHttpRequest request = exchange.getRequest();
@@ -25,21 +30,19 @@ public class LoginFilter implements GlobalFilter, Ordered {
             return chain.filter(exchange);
          }
         //判断有没有token
-        String token = request.getHeaders().getFirst("token");
-        if (token == null) {
-            //如果没有，拒绝访问
+        HttpCookie token = request.getCookies().getFirst("token");
+        if(token.getValue()==null || token.getValue().equals("")){
+            //如果没有拒绝访问
             response.setStatusCode(HttpStatus.UNAUTHORIZED);
             return response.setComplete();
         }
-        try {
-            //解析成功放行
-            Map map = JwtUtils.get(token);
-        } catch (Exception e) {
-            //解析失败，拒绝访问
-            response.setStatusCode(HttpStatus.UNAUTHORIZED);
-            return response.setComplete();
-
-        }
+        String tokenValue = token.getValue();
+        Object o = redisTemplate.opsForValue().get(tokenValue);
+       if(o==null || o.equals("")){
+           //如果在redis没有拒绝访问
+           response.setStatusCode(HttpStatus.UNAUTHORIZED);
+           return response.setComplete();
+       }
         return chain.filter(exchange);
     }
 
