@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itbuka.order.mapper.TaskMapper">
+
+    <resultMap id="BaseResultMap" type="com.itbuka.order.domain.Task">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="deleteTime" column="delete_time" jdbcType="TIMESTAMP"/>
+            <result property="taskType" column="task_type" jdbcType="VARCHAR"/>
+            <result property="mqExchange" column="mq_exchange" jdbcType="VARCHAR"/>
+            <result property="mqRoutingkey" column="mq_routingkey" jdbcType="VARCHAR"/>
+            <result property="requestBody" column="request_body" jdbcType="VARCHAR"/>
+            <result property="status" column="status" jdbcType="VARCHAR"/>
+            <result property="errormsg" column="errormsg" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,create_time,update_time,
+        delete_time,task_type,mq_exchange,
+        mq_routingkey,request_body,status,
+        errormsg
+    </sql>
+</mapper>

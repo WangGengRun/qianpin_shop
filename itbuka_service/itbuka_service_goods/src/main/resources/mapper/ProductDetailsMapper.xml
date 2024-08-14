@@ -26,8 +26,8 @@
     </sql>
     <update id="reduceStock">
         update goods_product_details
-        set inventory = inventory-#{num}
+        set num = num-#{num}
         where id = #{productId}
-          and inventory >= #{num}
+          and num >= #{num}
     </update>
 </mapper>

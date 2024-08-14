@@ -1,17 +1,17 @@
 server:
-  port: 9011
+  port: 9014
 spring:
-  application:
-    name: goods
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://192.168.88.139:3306/b0394?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
-    username: root
-    password: 123456
-  rabbitmq:
-    host: 192.168.88.139
   redis:
     host: 192.168.88.139
+  rabbitmq:
+    host: 192.168.88.139
+  application:
+    name: order
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.88.139:3306/b0394?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT
+    username: root
+    password: 123456
 feign:
   hystrix:
     enabled: true
@@ -26,6 +26,5 @@ hystrix:
           enabled: true
         isolation:
           strategy: SEMAPHORE
-
 mybatis-plus:
   mapper-locations: classpath*:/mapper/*.xml

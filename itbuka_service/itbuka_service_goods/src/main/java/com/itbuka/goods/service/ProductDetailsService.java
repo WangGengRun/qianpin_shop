@@ -12,7 +12,7 @@ import java.util.List;
 * @description 针对表【goods_product_details(商品详情表)】的数据库操作Service
 * @createDate 2024-08-10 12:18:23
 */
-public interface ProductDetailsService extends IService<ProductDetails> {
+public interface ProductDetailsService  {
 
     List<ProductDetails> selectAll();
 
@@ -28,5 +28,8 @@ public interface ProductDetailsService extends IService<ProductDetails> {
 
     Page<ProductDetails> pageList(ProductDetails iProductDetails, Integer page, Integer size);
 
+    /**
+     * 减库存
+     */
     Integer reduceStock(Long productId, Integer num);
 }

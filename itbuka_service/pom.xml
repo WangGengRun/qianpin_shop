@@ -18,6 +18,8 @@
         <module>itbuka_service_user</module>
         <module>itbuka_service_ad</module>
         <module>itbuka_service_search</module>
+        <module>itbuka_service_cart</module>
+        <module>itbuka_service_order</module>
     </modules>
 
     <properties>

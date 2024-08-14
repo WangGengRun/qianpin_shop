@@ -54,6 +54,18 @@ spring:
             - Path=/auth/**
           filters:
             - StripPrefix= 1
+        - id: cart
+          uri: lb://cart
+          predicates:
+            - Path=/cart/**
+          filters:
+            - StripPrefix= 1
+        - id: order
+          uri: lb://order
+          predicates:
+            - Path=/order/**
+          filters:
+            - StripPrefix= 1
   redis:
     host: 192.168.88.139
 server:

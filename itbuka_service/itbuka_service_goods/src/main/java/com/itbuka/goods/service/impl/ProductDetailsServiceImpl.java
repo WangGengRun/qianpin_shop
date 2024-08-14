@@ -22,8 +22,7 @@ import java.util.List;
 * @createDate 2024-08-10 12:18:23
 */
 @Service
-public class ProductDetailsServiceImpl extends ServiceImpl<ProductDetailsMapper, ProductDetails>
-    implements ProductDetailsService {
+public class ProductDetailsServiceImpl implements ProductDetailsService {
 @Autowired
 private ProductDetailsMapper iProductDetailsMapper;
 @Autowired
