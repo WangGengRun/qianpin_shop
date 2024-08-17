@@ -1,0 +1,7 @@
+server:
+  port: 9018
+spring:
+  application:
+    name: alipay
+  redis:
+    host: 192.168.88.139

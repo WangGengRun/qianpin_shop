@@ -11,6 +11,7 @@ import com.itbuka.entity.StatusCode;
 
 
 import java.util.List;
+import java.util.Map;
 
 /**
  *
@@ -113,4 +114,26 @@ public class OrderController {
         PageResult pageResult=new PageResult(pageList.getTotal(),pageList.getRecords());
         return new Result(true,StatusCode.OK,"查询成功",pageResult);
     }
+    /**
+     * 购物车下单
+     * @param
+     * @return
+     */
+    @PostMapping("/addCart")
+    public Result addCart(@RequestBody Map map){
+        iOrderService.addCart(map);
+        return Result.ok("购物车下单成功");
+    }
+
+    /**
+     * 清空购物车
+     * @param
+     * @return
+     */
+    @PostMapping("/clearCart")
+    public Result clearCart(@RequestBody Map map){
+        iOrderService.clearCart(map);
+        return Result.ok("清空购物车成功");
+    }
+
 }

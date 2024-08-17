@@ -18,6 +18,7 @@
         <module>itbuka_service_search_api</module>
         <module>itbuka_service_cart_api</module>
         <module>itbuka_service_order_api</module>
+        <module>itbuka_service_alipay_api</module>
     </modules>
 
     <properties>

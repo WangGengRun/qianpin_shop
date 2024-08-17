@@ -20,6 +20,7 @@
         <module>itbuka_service_search</module>
         <module>itbuka_service_cart</module>
         <module>itbuka_service_order</module>
+        <module>itbuka_service_pay</module>
     </modules>
 
     <properties>

@@ -1,4 +1,4 @@
-package com.itbuka.order.config;
+package com.itbuka.alipay.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -42,6 +42,7 @@ public class OAuthSourceConfig extends ResourceServerConfigurerAdapter {
         return converter;
     }
 
+
     /**
      * 指定当前资源的id和存储方案
      * @param resources
@@ -55,8 +56,8 @@ public class OAuthSourceConfig extends ResourceServerConfigurerAdapter {
     @Override
     public void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
+                .antMatchers("/**").permitAll()
                 //指定不同请求方式访问资源所需要的权限，一般查询是read，其余是 write。
-                .antMatchers("/notify/aliNotify").permitAll()
                 .antMatchers(HttpMethod.GET, "/**").access("#oauth2.hasScope('write')")
                 .antMatchers(HttpMethod.POST, "/**").access("#oauth2.hasScope('write')")
                 .antMatchers(HttpMethod.PATCH, "/**").access("#oauth2.hasScope('write')")

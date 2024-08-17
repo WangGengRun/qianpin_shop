@@ -12,7 +12,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableFeignClients(basePackages = {
-        "com.itbuka.goods.feign","com.itbuka.cart.feign"
+        "com.itbuka.goods.feign","com.itbuka.cart.feign","com.itbuka.alipay.feign"
 })
 @EnableScheduling
 public class OrderApplicaton {

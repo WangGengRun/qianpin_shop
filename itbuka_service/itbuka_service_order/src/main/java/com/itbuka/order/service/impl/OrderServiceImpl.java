@@ -1,12 +1,14 @@
 package com.itbuka.order.service.impl;
 
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.IdWorker;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 
 
 import com.github.pagehelper.PageHelper;
+import com.itbuka.cart.domain.Cart;
 import com.itbuka.cart.feign.CartFeign;
 import com.itbuka.goods.domain.ProductDetails;
 import com.itbuka.goods.feign.GoodsFeign;
@@ -24,6 +26,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import java.util.Map;
 
 /**
 * @author 王庚润
@@ -133,6 +136,36 @@ public class OrderServiceImpl implements OrderService {
         return (Page<Order>)this.selectList(iOrder);
 
     }
+
+    @Override
+    @Transactional
+    public Integer addCart(Map map) {
+        List list = JSONObject.parseObject(JSON.toJSONString(map.get("cart")), List.class);
+        Object addressId = map.get("addressId");
+        Object shippingMethod = map.get("shippingMethod");
+        for (Object o : list) {
+            Cart cart = JSONObject.parseObject(JSON.toJSONString(o), Cart.class);
+            Order order = new Order();
+            order.setProductId(cart.getProductId());
+            order.setMoney(cart.getMoney());
+            order.setNum(cart.getNum());
+            order.setAddressId(Long.valueOf(addressId.toString()));
+            order.setShippingMethod(shippingMethod.toString());
+            order.setSource(0);
+            order.setType(0);
+            this.insert(order);
+        }
+        return 1;
+    }
+
+    @Override
+    public Integer clearCart(Map map) {
+        List<Cart> data = cartFeign.findList().getData();
+        map.put("cart",data);
+        this.addCart(map);
+        return 1;
+    }
+
     public LambdaQueryWrapper lqw(Order iOrder){
         LambdaQueryWrapper <Order> lqw = new LambdaQueryWrapper<>();
         if (iOrder.getId() != null){

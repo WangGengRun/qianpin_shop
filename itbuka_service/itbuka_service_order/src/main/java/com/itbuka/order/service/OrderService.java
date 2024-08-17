@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.itbuka.order.domain.Order;
 
 import java.util.List;
+import java.util.Map;
 
 
 /**
@@ -64,5 +65,17 @@ public interface OrderService  {
      */
     Page<Order> pageList(Order iOrder, Integer page, Integer size);
 
+    /**
+     * 购物车下单
+     * @param map
+     * @return
+     */
+    Integer addCart(Map map);
+    /**
+     * 清空购物车
+     * @param map
+     * @return
+     */
+    Integer clearCart(Map map);
 
 }
