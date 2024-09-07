@@ -16,6 +16,7 @@ import java.util.Map;
  */
 @RestController
 @RequestMapping("/Classify")
+
 public class ClassifyController {
     @Autowired
     private ClassifyService iClassifyService;

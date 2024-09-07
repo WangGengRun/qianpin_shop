@@ -25,6 +25,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -74,9 +75,10 @@ public class OrderServiceImpl implements OrderService {
         if (details.getInventory() < iOrder.getNum()) {
             return -1;
         }
-
+        Date date = new Date();
 //        下单
         iOrder.setId(IdWorker.getId());
+        iOrder.setCreateTime(date);
         String userName = tokenDecode.getUserInfo().get("user_name");
         iOrder.setBuyerName(userName);
         int insert = iOrderMapper.insert(iOrder);
@@ -96,6 +98,8 @@ public class OrderServiceImpl implements OrderService {
         //发送消息
         rabbitTemplate.convertAndSend(RabbitConfig.ORDER_EXCHANGE,RabbitConfig.ORDER_QUEUE,JSON.toJSONString(task));
 
+        //向死信队列发消息，超时未支付
+        rabbitTemplate.convertAndSend("",RabbitConfig.PAY_QUEUE,JSON.toJSONString(iOrder));
         return 1;
 
     }
@@ -164,6 +168,50 @@ public class OrderServiceImpl implements OrderService {
         map.put("cart",data);
         this.addCart(map);
         return 1;
+    }
+
+    @Override
+    @Transactional
+    public void batchSend(List<Order> orders) {
+        //判断运单号和物流公司是否为空
+        for(Order order :orders){
+            if(order.getId()==null){
+                throw new RuntimeException("订单号为空");
+            }
+            if(order.getShippingMethod()==null || order.getTrackingNumber()==null){
+                throw new RuntimeException("请选择快递公司和填写快递单号");
+            }
+            //进行状态校验
+            Order order1 = iOrderMapper.selectById(order.getId());
+            if (order1.getStatus() != 2){
+                throw new RuntimeException("订单状态不是待发货");
+            }
+
+            //修改订单状态
+            order1.setStatus(3);
+            order1.setShippingMethod(order.getShippingMethod());
+            order1.setTrackingNumber(order.getTrackingNumber());
+            order1.setUpdateTime(new Date());
+            iOrderMapper.updateById(order1);
+
+        }
+        //给消息队列发消息
+        rabbitTemplate.convertAndSend("",RabbitConfig.RECEIVING_QUEUE,JSON.toJSONString(orders));
+
+    }
+
+    @Override
+    public void confirmTask(String orderId) {
+        Order order = iOrderMapper.selectById(orderId);
+        if (order == null) {
+            throw new RuntimeException("订单不存在");
+        }
+        if (order.getStatus() != 3) {
+            throw new RuntimeException("订单状态异常");
+        }
+        order.setStatus(6);//已完成
+        order.setUpdateTime(new Date());
+        iOrderMapper.updateById(order);
     }
 
     public LambdaQueryWrapper lqw(Order iOrder){

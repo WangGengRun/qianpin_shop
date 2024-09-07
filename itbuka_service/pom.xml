@@ -21,6 +21,7 @@
         <module>itbuka_service_cart</module>
         <module>itbuka_service_order</module>
         <module>itbuka_service_pay</module>
+        <module>itbuka_service_seckill</module>
     </modules>
 
     <properties>

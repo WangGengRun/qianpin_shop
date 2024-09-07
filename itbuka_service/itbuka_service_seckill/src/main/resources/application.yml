@@ -1,0 +1,30 @@
+server:
+  port: 9020
+spring:
+  rabbitmq:
+    host: 192.168.88.139
+  application:
+    name: seckill
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.88.139:3306/b0394?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+  redis:
+    host: 192.168.88.139
+feign:
+  hystrix:
+    enabled: true
+
+#hystrix 配置
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          #如果enabled设置为false，则请求超时交给ribbon控制
+          enabled: true
+        isolation:
+          strategy: SEMAPHORE
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/*.xml

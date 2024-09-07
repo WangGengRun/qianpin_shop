@@ -77,5 +77,15 @@ public interface OrderService  {
      * @return
      */
     Integer clearCart(Map map);
+    /**
+     * 批量发货
+     * @param orders
+     */
+    void batchSend(List<Order> orders);
+    /**
+     * 确认收货
+     * @param orderId
+     */
+    void confirmTask(String orderId);
 
 }

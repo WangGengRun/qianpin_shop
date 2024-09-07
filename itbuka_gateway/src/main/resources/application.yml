@@ -72,6 +72,12 @@ spring:
             - Path=/alipay/**
           filters:
             - StripPrefix= 1
+        - id: seckill
+          uri: lb://seckill
+          predicates:
+            - Path=/seckill/**
+          filters:
+            - StripPrefix= 1
   redis:
     host: 192.168.88.139
 server:

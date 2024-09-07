@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itbuka.seckill.mapper.SeckillProductMapper">
+
+    <resultMap id="BaseResultMap" type="com.itbuka.seckill.domain.SeckillProduct">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="seckillId" column="seckill_id" jdbcType="BIGINT"/>
+            <result property="productName" column="product_name" jdbcType="VARCHAR"/>
+            <result property="productId" column="product_id" jdbcType="BIGINT"/>
+            <result property="productMoney" column="product_money" jdbcType="DECIMAL"/>
+            <result property="num" column="num" jdbcType="INTEGER"/>
+            <result property="seckillMoney" column="seckill_money" jdbcType="DECIMAL"/>
+            <result property="merchantName" column="merchant_name" jdbcType="VARCHAR"/>
+            <result property="activityTimes" column="activity_times" jdbcType="VARCHAR"/>
+            <result property="isDelete" column="is_delete" jdbcType="INTEGER"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,seckill_id,product_name,
+        product_id,product_money,num,
+        seckill_money,merchant_name,activity_times,
+        is_delete,create_time,update_time
+    </sql>
+</mapper>

@@ -135,5 +135,25 @@ public class OrderController {
         iOrderService.clearCart(map);
         return Result.ok("清空购物车成功");
     }
+    /**
+     * 批量发货
+     * @param orders  订单列表
+     */
+    @PostMapping("/batchSend")
+    public Result batchSend( @RequestBody List<Order> orders){
+        iOrderService.batchSend( orders );
+        return Result.ok("发货成功");
+    }
+    /**
+     * 确认收货
+     * @param orderId  订单号
+     * @return
+     */
+    @GetMapping("/take")
+    public Result take(@RequestParam String orderId){
+        iOrderService.confirmTask( orderId);
+        return new Result( true,StatusCode.OK,"" );
+    }
+
 
 }

@@ -36,7 +36,7 @@ public class AliPayServiceImpl implements AliPayService {
     @Override
     public String H5Pay(AliPay aliPay) {
         //生成支付订单号
-        long time = new Date().getTime();
+
 
         Object o = redisTemplate.opsForValue().get("pay_" + aliPay.getOutTradeNo());
         if (o != null) {
@@ -47,7 +47,7 @@ public class AliPayServiceImpl implements AliPayService {
         request.setNotifyUrl(aliPayConfig.getNotifyUrl());
         //参数
         JSONObject bizContent = new JSONObject();
-        bizContent.put( "out_trade_no", time);
+        bizContent.put( "out_trade_no", aliPay.getTime());
         bizContent.put( "total_amount", aliPay.getTotalAmount());
         bizContent.put( "subject", aliPay.getSubject());
         bizContent.put( "product_code", "FAST_INSTANT_TRADE_PAY");
@@ -60,7 +60,7 @@ public class AliPayServiceImpl implements AliPayService {
         } catch (AlipayApiException e) {
             e.printStackTrace();
         } //将订单号存入redis
-        redisTemplate.opsForValue().set("orderNum_" + time,aliPay.getOutTradeNo());
+        redisTemplate.opsForValue().set("orderNum_" + aliPay.getTime(),aliPay.getOutTradeNo());
         //将支付页面存入redis
         redisTemplate.opsForValue().set("pay_" + aliPay.getOutTradeNo(), form, 30, TimeUnit.MINUTES);
 

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itbuka.seckill.mapper.SeckillMapper">
+
+    <resultMap id="BaseResultMap" type="com.itbuka.seckill.domain.Seckill">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="seckillName" column="seckill_name" jdbcType="VARCHAR"/>
+            <result property="startTime" column="start_time" jdbcType="TIMESTAMP"/>
+            <result property="endTime" column="end_time" jdbcType="TIMESTAMP"/>
+            <result property="status" column="status" jdbcType="INTEGER"/>
+            <result property="seckillRule" column="seckill_rule" jdbcType="VARCHAR"/>
+            <result property="frequency" column="frequency" jdbcType="VARCHAR"/>
+            <result property="isDelete" column="is_delete" jdbcType="INTEGER"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,seckill_name,start_time,
+        end_time,status,seckill_rule,
+        frequency,is_delete,create_time,
+        update_time
+    </sql>
+</mapper>

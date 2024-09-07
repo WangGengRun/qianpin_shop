@@ -117,11 +117,6 @@ public class RabbitConfig {
     public Binding PAY_DEAD_EXCHANGE_QUEUE(@Qualifier(PAY_DEAD_QUEUE) Queue queue, @Qualifier(PAY_EXCHANGE) Exchange exchange) {
         return BindingBuilder.bind(queue).to(exchange).with(PAY_DEAD_QUEUE).noargs();
     }
-
-
-
-
-
     public static final String RECEIVING_QUEUE = "receiving.queue";
     public static final String RECEIVING_DEAD_QUEUE = "receiving.dead.queue";
     public static final String RECEIVING_DEAD_EXCHANGE="receiving.dead.exchange";
@@ -150,3 +145,4 @@ public class RabbitConfig {
 
 
 }
+
