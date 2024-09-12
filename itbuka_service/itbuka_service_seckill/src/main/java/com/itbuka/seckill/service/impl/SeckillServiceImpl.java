@@ -1,13 +1,16 @@
 package com.itbuka.seckill.service.impl;
 
+import com.alibaba.fastjson.JSON;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 
 import com.github.pagehelper.PageHelper;
+import com.itbuka.seckill.config.RabbitConfig;
 import com.itbuka.seckill.domain.Seckill;
 import com.itbuka.seckill.mapper.SeckillMapper;
 import com.itbuka.seckill.service.SeckillService;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -24,6 +27,8 @@ public class SeckillServiceImpl extends ServiceImpl<SeckillMapper, Seckill>
     implements SeckillService {
     @Autowired
     private SeckillMapper iSeckillMapper;
+    @Autowired
+    private RabbitTemplate rabbitTemplate;
 
     @Override
     public List<Seckill> selectAll() {
@@ -42,6 +47,7 @@ public class SeckillServiceImpl extends ServiceImpl<SeckillMapper, Seckill>
 
     @Override
     public Integer insert(Seckill iSeckill) {
+        rabbitTemplate.convertAndSend(RabbitConfig.SECKILL_EXCHANGE,RabbitConfig.SECKILL_QUEUE, JSON.toJSONString(iSeckill));
         return iSeckillMapper.insert(iSeckill);
 
     }

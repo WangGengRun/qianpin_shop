@@ -5,6 +5,9 @@ spring:
     host: 192.168.88.139
   rabbitmq:
     host: 192.168.88.139
+    listener:
+      simple:
+        acknowledge-mode: manual
   application:
     name: order
   datasource:

@@ -31,6 +31,12 @@ public class RabbitConfig {
 
 
     public static final String PAY_EXCHANGE = "pay.exchange";
+    //队列
+    public static final String SECKILL_QUEUE = "seckill.queue";
+
+    //交换机
+    public static final String SECKILL_EXCHANGE = "seckill.exchange";
+
 
     //声明队列
     /*

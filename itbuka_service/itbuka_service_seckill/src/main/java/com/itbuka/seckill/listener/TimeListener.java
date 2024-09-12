@@ -13,6 +13,8 @@ import org.springframework.stereotype.Component;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
 
 @Component
 public class TimeListener {
@@ -22,36 +24,37 @@ public class TimeListener {
     private SeckillMapper seckillMapper;
     @Autowired
     private RedisTemplate redisTemplate;
-    //定时任务每天23点执行
+
     @Scheduled(cron = "0 0 23 * * ?")
     public void timeListener() {
-        //获取第二天的日期
+        //获取时间
         Date date = new Date(new Date().getTime() + 1000 * 60 * 60);
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd ");
-        String format = simpleDateFormat.format(date);
-        String start = format+"00:00:00";
-        String end = format+"23:59:59";
-        //把符合条件的秒杀活动查询出来
-        LambdaQueryWrapper<Seckill> lqw = new LambdaQueryWrapper<>();
-        lqw.ge(Seckill::getStartTime,start);
-        lqw.le(Seckill::getEndTime,end);
-        lqw.eq(Seckill::getIsDelete,0);
-        //查询秒杀活动
+        String startTime = simpleDateFormat.format(date) + "00:00:00";
+        String endTime = simpleDateFormat.format(date) + "23:59:59";
+        //查询出符合条件的商品
+        LambdaQueryWrapper<Seckill> lqw = new LambdaQueryWrapper();
+        lqw.ge(Seckill::getStartTime, startTime);
+        lqw.le(Seckill::getStartTime, endTime);
         List<Seckill> seckills = seckillMapper.selectList(lqw);
-        //根绝秒杀活动查询出对应的商品
-        if (seckills != null && seckills.size() > 0) {
-            for (Seckill seckill : seckills) {
-                LambdaQueryWrapper<SeckillProduct> lqwP = new LambdaQueryWrapper<>();
-                lqwP.eq(SeckillProduct::getSeckillId,seckill.getId());
-                lqwP.eq(SeckillProduct::getIsDelete,0);
-                List<SeckillProduct> select = seckillProductMapper.selectList(lqwP);
-                for (SeckillProduct product : select) {
-                    //最外层 是 年月日+时间场次 里面存的是 商品id+商品
-                    redisTemplate.boundHashOps(format+product.getActivityTimes()).put(product.getId(),product);
-                    //把秒杀的商品场次存到redis中
-                    redisTemplate.opsForSet().add(format,product.getActivityTimes());
-                }
+        //获取每一个时间段名称,用于后续redis中key的设置
+        Set<String> set = new TreeSet();
+        for (Seckill seckill : seckills) {
+            LambdaQueryWrapper<SeckillProduct> lambdaQueryWrapper = new LambdaQueryWrapper();
+            //状态必须为审核通过 status=1  商品库存个数>0
+            lambdaQueryWrapper.eq(SeckillProduct::getIsDelete,0);
+            lambdaQueryWrapper.ge(SeckillProduct::getNum,0);
+            lambdaQueryWrapper.eq(SeckillProduct::getSeckillId,seckill.getId());
+            List<SeckillProduct> seckillProducts = seckillProductMapper.selectList(lambdaQueryWrapper);
+            for (SeckillProduct seckillProduct : seckillProducts) {
+                set.add(seckillProduct.getActivityTimes());
+                //存放秒杀的商品
+                redisTemplate.boundHashOps(simpleDateFormat.format(date)+seckillProduct.getActivityTimes()).put(seckillProduct.getId(),seckillProduct);
+                //存放秒杀的库存
+                redisTemplate.opsForValue().set("Inventory_"+seckillProduct.getId(),seckillProduct.getNum());
             }
         }
+        //存放秒杀的时间场次
+        redisTemplate.boundValueOps("Seckill_"+simpleDateFormat.format(date)).set(set);
     }
 }
