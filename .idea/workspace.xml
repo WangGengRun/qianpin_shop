@@ -1,0 +1,739 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="93963902-204a-41df-b7b0-2b6ff42b34db" name="Default Changelist" comment="秒杀订单处理">
+      <change afterPath="$PROJECT_DIR$/itbuka_canal/src/test/java/Singleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_canal/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_canal/target/classes/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_canal/target/classes/com/itbuka/canal/CanalApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_canal/target/classes/com/itbuka/canal/config/RabbitConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_canal/target/classes/com/itbuka/canal/listener/AdListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_canal/target/classes/com/itbuka/canal/listener/AdRedisListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_canal/target/classes/com/itbuka/canal/listener/BusinessListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_canal/target/classes/com/itbuka/canal/listener/GoodListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_common/src/main/java/com/itbuka/entity/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_common/src/main/java/com/itbuka/entity/Merge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_common/src/main/java/com/itbuka/entity/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_common/src/main/java/com/itbuka/entity/bishiCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_common/src/main/java/com/itbuka/entity/niuketest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_common/src/main/java/com/itbuka/entity/test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_common/target/classes/com/itbuka/Interceptor/FeignInterceptor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_common/target/classes/com/itbuka/entity/PageResult.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_common/target/classes/com/itbuka/entity/Result.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_common/target/classes/com/itbuka/entity/StatusCode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_common/target/classes/com/itbuka/entity/test.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_common/target/classes/com/itbuka/utils/CookieUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_common/target/classes/com/itbuka/utils/JwtUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_common/target/classes/com/itbuka/utils/RandomUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_common/target/classes/com/itbuka/utils/TokenDecode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_common/target/classes/com/itbuka/utils/TokenUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_gateway/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_gateway/target/classes/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_gateway/target/classes/com/itbuka/gateway/GatewayApplication$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_gateway/target/classes/com/itbuka/gateway/GatewayApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_gateway/target/classes/com/itbuka/gateway/filter/IpFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_gateway/target/classes/com/itbuka/gateway/filter/LoginFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_gateway/target/classes/com/itbuka/gateway/utils/JwtUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_gateway/target/test-classes/test.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_oauth/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_oauth/target/classes/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_oauth/target/classes/com/itbuka/oauth/OAuthApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_oauth/target/classes/com/itbuka/oauth/config/OauthServerConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_oauth/target/classes/com/itbuka/oauth/config/WebSecurityConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_oauth/target/classes/com/itbuka/oauth/controller/AuthContrller.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_oauth/target/classes/com/itbuka/oauth/controller/ProductController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_oauth/target/classes/com/itbuka/oauth/controller/test.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_oauth/target/classes/com/itbuka/oauth/domain/SysUser.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_oauth/target/classes/com/itbuka/oauth/mapper/UserMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_oauth/target/classes/com/itbuka/oauth/service/AuthService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_oauth/target/classes/com/itbuka/oauth/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_oauth/target/classes/com/itbuka/oauth/service/impl/AuthServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_oauth/target/classes/com/itbuka/oauth/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_ad/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_ad/target/classes/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_ad/target/classes/com/itbuka/ad/AdApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_ad/target/classes/com/itbuka/ad/Listener/AdListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_ad/target/classes/com/itbuka/ad/config/RabbitConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_ad/target/classes/com/itbuka/ad/controller/AdController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_ad/target/classes/com/itbuka/ad/mapper/AdMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_ad/target/classes/com/itbuka/ad/service/AdService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_ad/target/classes/com/itbuka/ad/service/impl/AdServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_ad/target/classes/mapper/AdMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_cart/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_cart/target/classes/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_cart/target/classes/com/itbuka/cart/CartApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_cart/target/classes/com/itbuka/cart/config/OAuthSourceConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_cart/target/classes/com/itbuka/cart/controller/CartController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_cart/target/classes/com/itbuka/cart/service/CartService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_cart/target/classes/com/itbuka/cart/service/impl/CartServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_goods/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_goods/target/classes/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_goods/target/classes/com/itbuka/goods/GoodsApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_goods/target/classes/com/itbuka/goods/config/OAuthSourceConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_goods/target/classes/com/itbuka/goods/config/RabbitConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_goods/target/classes/com/itbuka/goods/controller/BrandController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_goods/target/classes/com/itbuka/goods/controller/ClassifyController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_goods/target/classes/com/itbuka/goods/controller/DetailController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_goods/target/classes/com/itbuka/goods/controller/ProductController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_goods/target/classes/com/itbuka/goods/controller/ProductDetailsController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_goods/target/classes/com/itbuka/goods/controller/SpecController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_goods/target/classes/com/itbuka/goods/listener/OrderListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_goods/target/classes/com/itbuka/goods/mapper/BrandMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_goods/target/classes/com/itbuka/goods/mapper/ClassifyMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_goods/target/classes/com/itbuka/goods/mapper/ProductDetailsMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_goods/target/classes/com/itbuka/goods/mapper/ProductMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_goods/target/classes/com/itbuka/goods/mapper/SpecMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_goods/target/classes/com/itbuka/goods/service/BrandService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_goods/target/classes/com/itbuka/goods/service/ClassifyService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_goods/target/classes/com/itbuka/goods/service/DetailService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_goods/target/classes/com/itbuka/goods/service/ProductDetailsService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_goods/target/classes/com/itbuka/goods/service/ProductService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_goods/target/classes/com/itbuka/goods/service/SpecService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_goods/target/classes/com/itbuka/goods/service/impl/ClassifyServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_goods/target/classes/com/itbuka/goods/service/impl/DetailServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_goods/target/classes/com/itbuka/goods/service/impl/ProductDetailsServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_goods/target/classes/com/itbuka/goods/service/impl/ProductServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_goods/target/classes/com/itbuka/goods/service/impl/ServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_goods/target/classes/com/itbuka/goods/service/impl/SpecServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_goods/target/classes/mapper/BrandMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_goods/target/classes/mapper/ProductDetailsMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_goods/target/classes/mapper/ProductMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_goods/target/classes/mapper/SpecMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_minio/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_minio/target/classes/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_order/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_order/target/classes/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_order/target/classes/com/itbuka/order/Listener/GoodsListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_order/target/classes/com/itbuka/order/Listener/Scheduling.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_order/target/classes/com/itbuka/order/OrderApplicaton.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_order/target/classes/com/itbuka/order/config/OAuthSourceConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_order/target/classes/com/itbuka/order/config/RabbitConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_order/target/classes/com/itbuka/order/controller/OrderController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_order/target/classes/com/itbuka/order/controller/TaskController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_order/target/classes/com/itbuka/order/mapper/OrderMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_order/target/classes/com/itbuka/order/mapper/TaskMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_order/target/classes/com/itbuka/order/notify/NotifyController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_order/target/classes/com/itbuka/order/service/OrderService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_order/target/classes/com/itbuka/order/service/TaskService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_order/target/classes/com/itbuka/order/service/impl/OrderServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_order/target/classes/com/itbuka/order/service/impl/TaskServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_order/target/classes/mapper/OrderMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_order/target/classes/mapper/TaskMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_pay/itbuka_service_alipay/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_pay/itbuka_service_alipay/target/classes/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_pay/itbuka_service_alipay/target/classes/com/itbuka/alipay/ALIPayApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_pay/itbuka_service_alipay/target/classes/com/itbuka/alipay/config/AliPayConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_pay/itbuka_service_alipay/target/classes/com/itbuka/alipay/config/OAuthSourceConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_pay/itbuka_service_alipay/target/classes/com/itbuka/alipay/controller/AliPayController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_pay/itbuka_service_alipay/target/classes/com/itbuka/alipay/service/AliPayService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_pay/itbuka_service_alipay/target/classes/com/itbuka/alipay/service/impl/AliPayServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_search/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_search/target/classes/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_search/target/classes/com/itbuka/search/Listener/SearchListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_search/target/classes/com/itbuka/search/SearchApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_search/target/classes/com/itbuka/search/config/RabbitConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_search/target/classes/com/itbuka/search/controller/SearchController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_search/target/classes/com/itbuka/search/mapper/ESManagerMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_search/target/classes/com/itbuka/search/service/ESManagerService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_search/target/classes/com/itbuka/search/service/SearchService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_search/target/classes/com/itbuka/search/service/impl/ESManagerServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_search/target/classes/com/itbuka/search/service/impl/SearchServiceImpl$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_search/target/classes/com/itbuka/search/service/impl/SearchServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_seckill/src/main/java/com/itbuka/seckill/service/impl/Thread_DeadLock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_seckill/src/main/java/com/itbuka/seckill/service/impl/test2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_seckill/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_seckill/target/classes/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_seckill/target/classes/com/itbuka/seckill/SeckillApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_seckill/target/classes/com/itbuka/seckill/config/OAuthSourceConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_seckill/target/classes/com/itbuka/seckill/config/RabbitConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_seckill/target/classes/com/itbuka/seckill/controller/RandomController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_seckill/target/classes/com/itbuka/seckill/controller/SecKillOrderController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_seckill/target/classes/com/itbuka/seckill/controller/SeckillController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_seckill/target/classes/com/itbuka/seckill/controller/SeckillIndexController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_seckill/target/classes/com/itbuka/seckill/controller/SeckillProductController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_seckill/target/classes/com/itbuka/seckill/listener/TimeListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_seckill/target/classes/com/itbuka/seckill/mapper/SeckillMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_seckill/target/classes/com/itbuka/seckill/mapper/SeckillProductMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_seckill/target/classes/com/itbuka/seckill/service/SecKillOrderService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_seckill/target/classes/com/itbuka/seckill/service/SeckillIndexService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_seckill/target/classes/com/itbuka/seckill/service/SeckillProductService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_seckill/target/classes/com/itbuka/seckill/service/SeckillService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_seckill/target/classes/com/itbuka/seckill/service/impl/Dress.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_seckill/target/classes/com/itbuka/seckill/service/impl/MyRunnable1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_seckill/target/classes/com/itbuka/seckill/service/impl/MyRunnable2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_seckill/target/classes/com/itbuka/seckill/service/impl/RandomServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_seckill/target/classes/com/itbuka/seckill/service/impl/SecKillOrderServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_seckill/target/classes/com/itbuka/seckill/service/impl/SeckillIndexServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_seckill/target/classes/com/itbuka/seckill/service/impl/SeckillProductServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_seckill/target/classes/com/itbuka/seckill/service/impl/SeckillServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_seckill/target/classes/com/itbuka/seckill/service/impl/Sort.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_seckill/target/classes/com/itbuka/seckill/service/impl/Thread_DeadLock.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_seckill/target/classes/com/itbuka/seckill/service/impl/Trousers.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_seckill/target/classes/com/itbuka/seckill/service/impl/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_seckill/target/classes/com/itbuka/seckill/service/impl/hanno.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_seckill/target/classes/com/itbuka/seckill/service/impl/homework.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_seckill/target/classes/com/itbuka/seckill/service/impl/test.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_seckill/target/classes/com/itbuka/seckill/service/impl/test2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_seckill/target/classes/com/itbuka/seckill/utils/AccessLimit.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_seckill/target/classes/com/itbuka/seckill/utils/AccessLimitAop.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_seckill/target/classes/com/itbuka/seckill/utils/CustomMessageSender.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_seckill/target/classes/mapper/SeckillMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_seckill/target/classes/mapper/SeckillProductMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_user/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_user/target/classes/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_user/target/classes/com/itbuka/user/UserApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_user/target/classes/com/itbuka/user/config/OAuthSourceConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_user/target/classes/com/itbuka/user/controller/AddController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_user/target/classes/com/itbuka/user/controller/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_user/target/classes/com/itbuka/user/mapper/AddressMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_user/target/classes/com/itbuka/user/mapper/UserMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_user/target/classes/com/itbuka/user/service/AddressService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_user/target/classes/com/itbuka/user/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_user/target/classes/com/itbuka/user/service/impl/AddressServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_user/target/classes/com/itbuka/user/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_user/target/classes/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service_api/itbuka_service_ad_api/target/classes/com/itbuka/ad/domain/Ad.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service_api/itbuka_service_alipay_api/target/classes/com/itbuka/alipay/domain/AliPay.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service_api/itbuka_service_alipay_api/target/classes/com/itbuka/alipay/feign/PayFeign.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service_api/itbuka_service_cart_api/target/classes/com/itbuka/cart/domain/Cart.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service_api/itbuka_service_cart_api/target/classes/com/itbuka/cart/feign/CartFeign.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service_api/itbuka_service_goods_api/target/classes/VipPointHistoryMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service_api/itbuka_service_goods_api/target/classes/com/itbuka/goods/domain/Address.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service_api/itbuka_service_goods_api/target/classes/com/itbuka/goods/domain/Brand.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service_api/itbuka_service_goods_api/target/classes/com/itbuka/goods/domain/Classify.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service_api/itbuka_service_goods_api/target/classes/com/itbuka/goods/domain/Detail.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service_api/itbuka_service_goods_api/target/classes/com/itbuka/goods/domain/Product.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service_api/itbuka_service_goods_api/target/classes/com/itbuka/goods/domain/ProductDetails.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service_api/itbuka_service_goods_api/target/classes/com/itbuka/goods/domain/Spec.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service_api/itbuka_service_goods_api/target/classes/com/itbuka/goods/domain/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service_api/itbuka_service_goods_api/target/classes/com/itbuka/goods/domain/Vip.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service_api/itbuka_service_goods_api/target/classes/com/itbuka/goods/domain/VipAppraise.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service_api/itbuka_service_goods_api/target/classes/com/itbuka/goods/domain/VipFunds.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service_api/itbuka_service_goods_api/target/classes/com/itbuka/goods/domain/VipPointHistory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service_api/itbuka_service_goods_api/target/classes/com/itbuka/goods/feign/GoodsFeign.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service_api/itbuka_service_goods_api/target/classes/com/itbuka/goods/feign/UserFeign.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service_api/itbuka_service_order_api/target/classes/com/itbuka/order/domain/Order.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service_api/itbuka_service_order_api/target/classes/com/itbuka/order/domain/Task.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service_api/itbuka_service_order_api/target/classes/com/itbuka/order/feign/OrderFeign.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service_api/itbuka_service_search_api/target/classes/com/itbuka/damian/DetailIndex.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service_api/itbuka_service_seckill_api/target/classes/com/itbuka/seckill/domain/Seckill.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itbuka_service_api/itbuka_service_seckill_api/target/classes/com/itbuka/seckill/domain/SeckillProduct.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itbuka/domain/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itbuka/domain/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itbuka/domain/StudentManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itbuka/domain/Application.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itbuka/domain/Student.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/itbuka/domain/StudentManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itbuka_gateway/src/main/java/com/itbuka/gateway/GatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/itbuka_gateway/src/main/java/com/itbuka/gateway/GatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itbuka_service/itbuka_service_ad/src/main/java/com/itbuka/ad/Listener/AdListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_ad/src/main/java/com/itbuka/ad/Listener/AdListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itbuka_service/itbuka_service_goods/src/main/java/com/itbuka/goods/controller/SpecController.java" beforeDir="false" afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_goods/src/main/java/com/itbuka/goods/controller/SpecController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itbuka_service/itbuka_service_goods/src/main/resources/mapper/BrandMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_goods/src/main/resources/mapper/BrandMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itbuka_service/itbuka_service_pay/itbuka_service_alipay/src/main/java/com/itbuka/alipay/service/impl/AliPayServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_pay/itbuka_service_alipay/src/main/java/com/itbuka/alipay/service/impl/AliPayServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itbuka_service/itbuka_service_seckill/src/main/java/com/itbuka/seckill/listener/TimeListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_seckill/src/main/java/com/itbuka/seckill/listener/TimeListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itbuka_service/itbuka_service_seckill/src/main/java/com/itbuka/seckill/service/impl/SecKillOrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_seckill/src/main/java/com/itbuka/seckill/service/impl/SecKillOrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itbuka_service/itbuka_service_seckill/src/main/java/com/itbuka/seckill/service/impl/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_seckill/src/main/java/com/itbuka/seckill/service/impl/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itbuka_service/itbuka_service_seckill/src/main/java/com/itbuka/seckill/utils/AccessLimitAop.java" beforeDir="false" afterPath="$PROJECT_DIR$/itbuka_service/itbuka_service_seckill/src/main/java/com/itbuka/seckill/utils/AccessLimitAop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itbuka_service_api/itbuka_service_order_api/src/main/java/com/itbuka/order/feign/OrderFeign.java" beforeDir="false" afterPath="$PROJECT_DIR$/itbuka_service_api/itbuka_service_order_api/src/main/java/com/itbuka/order/feign/OrderFeign.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Yml File" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\java\m2" />
+        <option name="userSettingsFile" value="D:\java\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2jlOFA8Zv1jSwpJvdo4gDcLiTTK" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="ChangesTree.GroupingKeys" value="directory" />
+    <property name="DatabaseDriversLRU" value="cassandra&#10;mysql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="database.data.extractors.current.export.id" value="Comma-separated (CSV)_id" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="spring.boot" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.itbuka.goods.controller" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\java\run\itbuka_shop394\itbuka_service\itbuka_service_order\src\main\java\com\itbuka\order" />
+      <recent name="D:\java\run\itbuka_shop394\itbuka_service\itbuka_service_search\src\main\resources" />
+      <recent name="D:\java\run\itbuka_shop394" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\java\run\itbuka_shop394\itbuka_service\itbuka_service_seckill\src\main\resources" />
+      <recent name="D:\java\run\itbuka_shop394\itbuka_service\itbuka_service_order\src\main\resources\mapper" />
+      <recent name="D:\java\run\itbuka_shop394\itbuka_service\itbuka_service_order\src\main\resources" />
+      <recent name="D:\java\run\itbuka_shop394\itbuka_service\itbuka_service_goods\src\main\resources\mapper" />
+      <recent name="D:\java\run\itbuka_shop394\itbuka_service\itbuka_service_ad\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.itbuka.seckill.config" />
+      <recent name="com.itbuka.order.config" />
+      <recent name="com.itbuka.goods.config" />
+      <recent name="com.itbuka.user.config" />
+      <recent name="com.itbuka.search" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="应用程序.bishiCode">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.itbuka.entity.Main" />
+      <module name="itbuka_common" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itbuka.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.itbuka.entity.Solution" />
+      <module name="itbuka_common" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itbuka.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="bishiCode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.itbuka.entity.bishiCode" />
+      <module name="itbuka_common" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itbuka.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="niuketest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.itbuka.entity.niuketest" />
+      <module name="itbuka_common" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itbuka.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.itbuka.entity.test" />
+      <module name="itbuka_common" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itbuka.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="itbuka_shop394" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="itbuka_shop394" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="应用程序.Main" />
+      <item itemvalue="应用程序.test" />
+      <item itemvalue="应用程序.niuketest" />
+      <item itemvalue="应用程序.Solution" />
+      <item itemvalue="应用程序.bishiCode" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="应用程序.bishiCode" />
+        <item itemvalue="应用程序.Solution" />
+        <item itemvalue="应用程序.niuketest" />
+        <item itemvalue="应用程序.test" />
+        <item itemvalue="应用程序.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="93963902-204a-41df-b7b0-2b6ff42b34db" name="Default Changelist" comment="" />
+      <created>1721958090825</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1721958090825</updated>
+      <workItem from="1721958093204" duration="14835000" />
+      <workItem from="1722043122619" duration="10949000" />
+      <workItem from="1722064882555" duration="5035000" />
+      <workItem from="1722090959350" duration="1441000" />
+      <workItem from="1722128529933" duration="13034000" />
+      <workItem from="1722228774371" duration="1310000" />
+      <workItem from="1722239324700" duration="10665000" />
+      <workItem from="1722256030729" duration="179000" />
+      <workItem from="1722256227348" duration="34000" />
+      <workItem from="1722256274223" duration="36000" />
+      <workItem from="1722256329879" duration="1388000" />
+      <workItem from="1722257745122" duration="2124000" />
+      <workItem from="1722259903151" duration="97000" />
+      <workItem from="1722265201750" duration="3071000" />
+      <workItem from="1722301987556" duration="16004000" />
+      <workItem from="1722386944525" duration="7414000" />
+      <workItem from="1722476965724" duration="3993000" />
+      <workItem from="1722612239291" duration="1441000" />
+      <workItem from="1722649360469" duration="1539000" />
+      <workItem from="1722674211463" duration="1977000" />
+      <workItem from="1722676220084" duration="7496000" />
+      <workItem from="1722745399468" duration="3431000" />
+      <workItem from="1722820819195" duration="9506000" />
+      <workItem from="1723000018003" duration="8461000" />
+      <workItem from="1723028866268" duration="1752000" />
+      <workItem from="1723077414206" duration="8383000" />
+      <workItem from="1723169310177" duration="8013000" />
+      <workItem from="1723257929869" duration="17295000" />
+      <workItem from="1723295772406" duration="2610000" />
+      <workItem from="1723337889918" duration="12877000" />
+      <workItem from="1723357633465" duration="21871000" />
+      <workItem from="1723430012878" duration="25004000" />
+      <workItem from="1723475424591" duration="56000" />
+      <workItem from="1723511235350" duration="16304000" />
+      <workItem from="1723597545732" duration="15018000" />
+      <workItem from="1723616393240" duration="1284000" />
+      <workItem from="1723622341833" duration="14167000" />
+      <workItem from="1723684332855" duration="10944000" />
+      <workItem from="1723806627257" duration="7548000" />
+      <workItem from="1723859567828" duration="8296000" />
+      <workItem from="1723946977674" duration="2490000" />
+      <workItem from="1724297529562" duration="5946000" />
+      <workItem from="1725674231620" duration="7000000" />
+      <workItem from="1725764237136" duration="4144000" />
+      <workItem from="1725860126973" duration="12699000" />
+      <workItem from="1726047992898" duration="1647000" />
+      <workItem from="1726116955135" duration="17570000" />
+      <workItem from="1726232313077" duration="2696000" />
+      <workItem from="1726459715119" duration="3804000" />
+      <workItem from="1726654450571" duration="2422000" />
+      <workItem from="1726907396020" duration="1217000" />
+      <workItem from="1727058621937" duration="1231000" />
+      <workItem from="1727161926048" duration="3110000" />
+      <workItem from="1727438099338" duration="1824000" />
+      <workItem from="1728358445574" duration="9079000" />
+      <workItem from="1728564046120" duration="652000" />
+      <workItem from="1728612219006" duration="4001000" />
+      <workItem from="1728692702061" duration="4794000" />
+      <workItem from="1731742693107" duration="8000" />
+      <workItem from="1731742713032" duration="2961000" />
+      <workItem from="1733022878549" duration="4575000" />
+      <workItem from="1733305228578" duration="15000" />
+      <workItem from="1734841952927" duration="5004000" />
+      <workItem from="1736488048475" duration="5051000" />
+      <workItem from="1736763606497" duration="3183000" />
+      <workItem from="1737183800415" duration="3712000" />
+      <workItem from="1737707134737" duration="5309000" />
+      <workItem from="1738296428043" duration="870000" />
+      <workItem from="1738549803853" duration="6628000" />
+      <workItem from="1738633256351" duration="3463000" />
+      <workItem from="1738653837011" duration="1186000" />
+      <workItem from="1738720339760" duration="12887000" />
+      <workItem from="1738920104541" duration="1048000" />
+      <workItem from="1739062936626" duration="2953000" />
+      <workItem from="1739503463836" duration="2204000" />
+      <workItem from="1739604417607" duration="3292000" />
+      <workItem from="1739670437880" duration="1918000" />
+      <workItem from="1739754163000" duration="2416000" />
+      <workItem from="1740149887070" duration="1005000" />
+      <workItem from="1740193795900" duration="3487000" />
+      <workItem from="1740274584292" duration="3494000" />
+      <workItem from="1740363601636" duration="4694000" />
+      <workItem from="1740660813291" duration="1814000" />
+      <workItem from="1740997674548" duration="3057000" />
+      <workItem from="1741162087737" duration="1051000" />
+      <workItem from="1741248701205" duration="260000" />
+      <workItem from="1741307956496" duration="278000" />
+      <workItem from="1742827177024" duration="1917000" />
+      <workItem from="1743339135131" duration="216000" />
+      <workItem from="1748326270670" duration="2726000" />
+      <workItem from="1748352054800" duration="58000" />
+      <workItem from="1749302301928" duration="1187000" />
+      <workItem from="1749898538317" duration="3008000" />
+      <workItem from="1751192845838" duration="1024000" />
+      <workItem from="1751262493687" duration="2404000" />
+      <workItem from="1752317422807" duration="1285000" />
+      <workItem from="1752649316466" duration="3822000" />
+      <workItem from="1752906143780" duration="1465000" />
+      <workItem from="1752920446606" duration="688000" />
+      <workItem from="1752975198793" duration="3203000" />
+      <workItem from="1753069737936" duration="1576000" />
+      <workItem from="1753321467522" duration="4866000" />
+      <workItem from="1753838212027" duration="560000" />
+      <workItem from="1754654370614" duration="3406000" />
+      <workItem from="1755178493302" duration="3015000" />
+      <workItem from="1756195557386" duration="1256000" />
+      <workItem from="1756362478904" duration="15000" />
+      <workItem from="1758112977165" duration="929000" />
+      <workItem from="1758166852963" duration="2660000" />
+      <workItem from="1758193022222" duration="1814000" />
+      <workItem from="1758275376842" duration="109000" />
+      <workItem from="1758348584510" duration="1025000" />
+      <workItem from="1758868661860" duration="955000" />
+      <workItem from="1759368391865" duration="165000" />
+    </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1721976834382</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1721976834382</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Initial commit">
+      <created>1722137411765</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1722137411765</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Initial commit">
+      <created>1722252161713</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1722252161713</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Merge branch 'master' of https://gitee.com/wang-gengrun/itbuka_shop394&#10;# Please enter a commit message to explain why this merge is necessary,&#10;# especially if it merges an updated upstream into a topic branch.&#10;#&#10;# Lines starting with '#' will be ignored, and an empty message aborts&#10;# the commit.">
+      <created>1722258013986</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1722258013986</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Merge branch 'master' of https://gitee.com/wang-gengrun/itbuka_shop394&#10;# Please enter a commit message to explain why this merge is necessary,&#10;# especially if it merges an updated upstream into a topic branch.&#10;#&#10;# Lines starting with '#' will be ignored, and an empty message aborts&#10;# the commit.">
+      <created>1722259768144</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1722259768144</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Merge branch 'master' of https://gitee.com/wang-gengrun/itbuka_shop394&#10;# Please enter a commit message to explain why this merge is necessary,&#10;# especially if it merges an updated upstream into a topic branch.&#10;#&#10;# Lines starting with '#' will be ignored, and an empty message aborts&#10;# the commit.">
+      <created>1722266755032</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1722266755032</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Merge branch 'master' of https://gitee.com/wang-gengrun/itbuka_shop394&#10;# Please enter a commit message to explain why this merge is necessary,&#10;# especially if it merges an updated upstream into a topic branch.&#10;#&#10;# Lines starting with '#' will be ignored, and an empty message aborts&#10;# the commit.">
+      <created>1722313195962</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1722313195962</updated>
+    </task>
+    <task id="LOCAL-00008" summary="商品管理">
+      <created>1722408268148</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1722408268148</updated>
+    </task>
+    <task id="LOCAL-00009" summary="商品管理">
+      <created>1722688797559</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1722688797560</updated>
+    </task>
+    <task id="LOCAL-00010" summary="索引库">
+      <created>1723296419740</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1723296419740</updated>
+    </task>
+    <task id="LOCAL-00011" summary="索引库">
+      <created>1723347066096</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1723347066096</updated>
+    </task>
+    <task id="LOCAL-00012" summary="索引库">
+      <created>1723367519003</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1723367519003</updated>
+    </task>
+    <task id="LOCAL-00013" summary="索引库">
+      <created>1723430055950</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1723430055950</updated>
+    </task>
+    <task id="LOCAL-00014" summary="用户认证">
+      <created>1723475469490</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1723475469490</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Rabbitmq解决分布式事务">
+      <created>1723622417953</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1723622417953</updated>
+    </task>
+    <task id="LOCAL-00016" summary="支付宝">
+      <created>1723859612193</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1723859612193</updated>
+    </task>
+    <task id="LOCAL-00017" summary="秒杀服务">
+      <created>1725700055028</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1725700055028</updated>
+    </task>
+    <task id="LOCAL-00018" summary="秒杀服务">
+      <created>1725860223824</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1725860223825</updated>
+    </task>
+    <task id="LOCAL-00019" summary="秒杀订单处理">
+      <created>1726127344914</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1726127344914</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <MESSAGE value="Merge branch 'master' of https://gitee.com/wang-gengrun/itbuka_shop394&#10;# Please enter a commit message to explain why this merge is necessary,&#10;# especially if it merges an updated upstream into a topic branch.&#10;#&#10;# Lines starting with '#' will be ignored, and an empty message aborts&#10;# the commit." />
+    <MESSAGE value="商品管理" />
+    <MESSAGE value="索引库" />
+    <MESSAGE value="用户认证" />
+    <MESSAGE value="Rabbitmq解决分布式事务" />
+    <MESSAGE value="支付宝" />
+    <MESSAGE value="秒杀服务" />
+    <MESSAGE value="秒杀订单处理" />
+    <option name="LAST_COMMIT_MESSAGE" value="秒杀订单处理" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.springframework.security.authentication.InternalAuthenticationServiceException" package="org.springframework.security.authentication" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/itbuka_common/src/main/java/com/itbuka/entity/Solution.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

@@ -15,7 +15,6 @@ public class AdListener {
     private GoodsFeign goodsFeign;
     @RabbitListener(queues = RabbitConfig.GOODS_QUEUE)
     public void goods(String id){
-
         Detail data=goodsFeign.findDetail(Long.valueOf(id)).getData();
     }
 }

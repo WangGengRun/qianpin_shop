@@ -1,0 +1,89 @@
+<changelist name="Uncommitted_changes_before_Update_at_2024_7_29_20_29_[Default_Changelist]" date="1722256181241" recycled="false" toDelete="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_29_20_29_[Default_Changelist]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 2024/7/29 20:29 [Default Changelist]" />
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="itbuka_service/itbuka_service_goods/target/classes/com/itbuka/goods/mapper/BrandMapper.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_29_20_29_[Default_Changelist]/BrandMapper.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="itbuka_service/itbuka_service_minio/target/classes/com/itbuka/minio/MinioApplication.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_29_20_29_[Default_Changelist]/MinioApplication.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="itbuka_service/itbuka_service_minio/target/classes/com/itbuka/minio/util/MinioUtils.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_29_20_29_[Default_Changelist]/MinioUtils.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="itbuka_service_api/itbuka_service_goods_api/target/classes/com/itbuka/goods/domain/Brand.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_29_20_29_[Default_Changelist]/Brand.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="itbuka_gateway/target/classes/com/itbuka/gateway/GatewayApplication.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_29_20_29_[Default_Changelist]/GatewayApplication.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="itbuka_service/itbuka_service_goods/target/classes/com/itbuka/goods/controller/BrandController.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_29_20_29_[Default_Changelist]/BrandController.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="itbuka_service/itbuka_service_minio/target/classes/com/itbuka/minio/MinioController.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_29_20_29_[Default_Changelist]/MinioController.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="itbuka_service/itbuka_service_minio/target/classes/com/itbuka/minio/config/MinioConfig.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_29_20_29_[Default_Changelist]/MinioConfig.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="itbuka_common/target/classes/com/itbuka/entity/Result.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_29_20_29_[Default_Changelist]/Result.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="itbuka_common/target/classes/com/itbuka/entity/StatusCode.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_29_20_29_[Default_Changelist]/StatusCode.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="itbuka_service/itbuka_service_minio/target/classes/com/itbuka/minio/domin/MinioProp.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_29_20_29_[Default_Changelist]/MinioProp.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="itbuka_service/itbuka_service_goods/target/classes/com/itbuka/goods/service/impl/ServiceImpl.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_29_20_29_[Default_Changelist]/ServiceImpl.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="itbuka_gateway/target/classes/com/itbuka/gateway/GatewayApplication$1.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_29_20_29_[Default_Changelist]/GatewayApplication$1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="itbuka_gateway/target/classes/com/itbuka/gateway/IpFilter.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_29_20_29_[Default_Changelist]/IpFilter.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="itbuka_common/target/classes/com/itbuka/entity/PageResult.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_29_20_29_[Default_Changelist]/PageResult.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="itbuka_service/itbuka_service_goods/target/classes/com/itbuka/goods/service/BrandService.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_29_20_29_[Default_Changelist]/BrandService.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="itbuka_service/itbuka_service_goods/target/classes/com/itbuka/goods/GoodsApplication.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_7_29_20_29_[Default_Changelist]/GoodsApplication.class" />
+  </binary>
+</changelist>

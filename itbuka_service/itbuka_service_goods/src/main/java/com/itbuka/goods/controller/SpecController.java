@@ -18,8 +18,6 @@ import java.util.List;
 public class SpecController {
     @Autowired
     private SpecService iSpecService;
-
-
     /**
      * 查询全部规格表
      *

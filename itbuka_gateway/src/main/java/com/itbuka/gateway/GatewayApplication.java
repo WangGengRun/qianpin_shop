@@ -14,6 +14,7 @@ public class GatewayApplication {
     public static void main(String[] args) {
         SpringApplication.run(GatewayApplication.class, args);
     }
+    //这段代码的作用是创建一个基于客户端 IP 地址的限流键解析器
     @Bean
     public KeyResolver ipKeyResolver() {
         return new KeyResolver() {

@@ -1,0 +1,19 @@
+Index: itbuka_service/itbuka_service_goods/src/main/resources/application.yml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>server:\r\n  port: 9011\r\nspring:\r\n  application:\r\n    name: goods\r\n  datasource:\r\n    driver-class-name: com.mysql.cj.jdbc.Driver\r\n    url: jdbc:mysql://192.168.211.132:3306/itbuka_goods?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai\r\n    username: root\r\n    password: 123456\r\nfeign:\r\n  hystrix:\r\n    enabled: true\r\n\r\n#hystrix 配置\r\nhystrix:\r\n  command:\r\n    default:\r\n      execution:\r\n        timeout:\r\n          #如果enabled设置为false，则请求超时交给ribbon控制\r\n          enabled: true\r\n        isolation:\r\n          strategy: SEMAPHORE\r\n\r\nmybatis-plus:\r\n  mapper-locations: classpath*:/mapper/*.xml\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/itbuka_service/itbuka_service_goods/src/main/resources/application.yml b/itbuka_service/itbuka_service_goods/src/main/resources/application.yml
+--- a/itbuka_service/itbuka_service_goods/src/main/resources/application.yml	(revision 6508d13ac22ef82e5fecd521f1feab126eb689bd)
++++ b/itbuka_service/itbuka_service_goods/src/main/resources/application.yml	(date 1721980418740)
+@@ -5,7 +5,7 @@
+     name: goods
+   datasource:
+     driver-class-name: com.mysql.cj.jdbc.Driver
+-    url: jdbc:mysql://192.168.211.132:3306/itbuka_goods?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
++    url: jdbc:mysql://localhost:3306/itbuka_goods?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+     username: root
+     password: 123456
+ feign:

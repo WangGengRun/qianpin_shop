@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itbuka.vip.mapper.VipPointHistoryMapper">
+
+    <resultMap id="BaseResultMap" type="com.itbuka.goods.domain.VipPointHistory">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="vipName" column="vip_name" jdbcType="VARCHAR"/>
+            <result property="operateText" column="operate_text" jdbcType="VARCHAR"/>
+            <result property="beforePoint" column="before_point" jdbcType="INTEGER"/>
+            <result property="changePoint" column="change_point" jdbcType="INTEGER"/>
+            <result property="currentPoint" column="current_point" jdbcType="INTEGER"/>
+            <result property="operateTime" column="operate_time" jdbcType="TIMESTAMP"/>
+            <result property="isDelete" column="is_delete" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,vip_name,operate_text,
+        before_point,change_point,current_point,
+        operate_time,is_delete
+    </sql>
+</mapper>

@@ -14,6 +14,7 @@ import com.alipay.api.response.AlipayTradeRefundResponse;
 
 import com.itbuka.alipay.config.AliPayConfig;
 import com.itbuka.alipay.domain.AliPay;
+
 import com.itbuka.alipay.service.AliPayService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
@@ -36,8 +37,6 @@ public class AliPayServiceImpl implements AliPayService {
     @Override
     public String H5Pay(AliPay aliPay) {
         //生成支付订单号
-
-
         Object o = redisTemplate.opsForValue().get("pay_" + aliPay.getOutTradeNo());
         if (o != null) {
             return o.toString();

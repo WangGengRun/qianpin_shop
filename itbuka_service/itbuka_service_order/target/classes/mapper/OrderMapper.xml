@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itbuka.order.mapper.OrderMapper">
+
+    <resultMap id="BaseResultMap" type="com.itbuka.order.domain.Order">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="source" column="source" jdbcType="INTEGER"/>
+            <result property="type" column="type" jdbcType="INTEGER"/>
+            <result property="buyerName" column="buyer_name" jdbcType="VARCHAR"/>
+            <result property="money" column="money" jdbcType="DECIMAL"/>
+            <result property="status" column="status" jdbcType="INTEGER"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="isDelete" column="is_delete" jdbcType="INTEGER"/>
+            <result property="addressId" column="address_id" jdbcType="BIGINT"/>
+            <result property="productId" column="product_id" jdbcType="BIGINT"/>
+            <result property="num" column="num" jdbcType="INTEGER"/>
+            <result property="tradeNo" column="trade_no" jdbcType="VARCHAR"/>
+            <result property="shippingMethod" column="shipping_method" jdbcType="VARCHAR"/>
+            <result property="trackingNumber" column="tracking_number" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,source,type,
+        buyer_name,money,status,
+        update_time,create_time,is_delete,
+        address_id,product_id,num,
+        trade_no,shipping_method,tracking_number
+    </sql>
+</mapper>

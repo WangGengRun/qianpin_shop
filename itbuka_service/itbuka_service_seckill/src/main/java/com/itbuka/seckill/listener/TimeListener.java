@@ -32,7 +32,7 @@ public class TimeListener {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd ");
         String startTime = simpleDateFormat.format(date) + "00:00:00";
         String endTime = simpleDateFormat.format(date) + "23:59:59";
-        //查询出符合条件的商品
+        //查询出符合条件的秒杀活动
         LambdaQueryWrapper<Seckill> lqw = new LambdaQueryWrapper();
         lqw.ge(Seckill::getStartTime, startTime);
         lqw.le(Seckill::getStartTime, endTime);

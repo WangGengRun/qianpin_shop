@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="itbuka_service_alipay_api" />
+        <module name="itbuka_service_ad_api" />
+        <module name="itbuka_service_user" />
+        <module name="itbuka_service_cart_api" />
+        <module name="itbuka_common" />
+        <module name="itbuka_service_search" />
+        <module name="itbuka_common_db" />
+        <module name="itbuka_service_minio" />
+        <module name="itbuka_service_order_api" />
+        <module name="itbuka_canal" />
+        <module name="itbuka_service_vip" />
+        <module name="itbuka_oauth" />
+        <module name="itbuka_service_cart" />
+        <module name="itbuka_service_seckill" />
+        <module name="itbuka_service_goods_api" />
+        <module name="itbuka_service_goods" />
+        <module name="itbuka_service_alipay" />
+        <module name="itbuka_service_minio_api" />
+        <module name="itbuka_service_seckill_api" />
+        <module name="itbuka_service_search_api" />
+        <module name="itbuka_service_ad" />
+        <module name="itbuka_gateway" />
+        <module name="itbuka_service_order" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="itbuka_canal" target="1.8" />
+      <module name="itbuka_common" target="1.8" />
+      <module name="itbuka_common_db" target="1.8" />
+      <module name="itbuka_gateway" target="1.8" />
+      <module name="itbuka_oauth" target="1.8" />
+      <module name="itbuka_service" target="1.8" />
+      <module name="itbuka_service_ad" target="1.8" />
+      <module name="itbuka_service_ad_api" target="1.8" />
+      <module name="itbuka_service_alipay" target="1.8" />
+      <module name="itbuka_service_alipay_api" target="1.8" />
+      <module name="itbuka_service_api" target="1.8" />
+      <module name="itbuka_service_cart" target="1.8" />
+      <module name="itbuka_service_cart_api" target="1.8" />
+      <module name="itbuka_service_goods" target="1.8" />
+      <module name="itbuka_service_goods_api" target="1.8" />
+      <module name="itbuka_service_minio" target="1.8" />
+      <module name="itbuka_service_minio_api" target="1.8" />
+      <module name="itbuka_service_order" target="1.8" />
+      <module name="itbuka_service_order_api" target="1.8" />
+      <module name="itbuka_service_pay" target="1.8" />
+      <module name="itbuka_service_search" target="1.8" />
+      <module name="itbuka_service_search_api" target="1.8" />
+      <module name="itbuka_service_seckill" target="1.8" />
+      <module name="itbuka_service_seckill_api" target="1.8" />
+      <module name="itbuka_service_user" target="1.8" />
+      <module name="itbuka_service_vip" target="1.8" />
+      <module name="itbuka_shop" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="itbuka_canal" options="-parameters" />
+      <module name="itbuka_common" options="-parameters" />
+      <module name="itbuka_common_db" options="-parameters" />
+      <module name="itbuka_gateway" options="-parameters" />
+      <module name="itbuka_oauth" options="-parameters" />
+      <module name="itbuka_service_ad" options="-parameters" />
+      <module name="itbuka_service_ad_api" options="-parameters" />
+      <module name="itbuka_service_alipay" options="-parameters" />
+      <module name="itbuka_service_alipay_api" options="-parameters" />
+      <module name="itbuka_service_cart" options="-parameters" />
+      <module name="itbuka_service_cart_api" options="-parameters" />
+      <module name="itbuka_service_goods" options="-parameters" />
+      <module name="itbuka_service_goods_api" options="-parameters" />
+      <module name="itbuka_service_minio" options="-parameters" />
+      <module name="itbuka_service_minio_api" options="-parameters" />
+      <module name="itbuka_service_order" options="-parameters" />
+      <module name="itbuka_service_order_api" options="-parameters" />
+      <module name="itbuka_service_pay" options="-parameters" />
+      <module name="itbuka_service_search" options="-parameters" />
+      <module name="itbuka_service_search_api" options="-parameters" />
+      <module name="itbuka_service_seckill" options="-parameters" />
+      <module name="itbuka_service_seckill_api" options="-parameters" />
+      <module name="itbuka_service_user" options="-parameters" />
+      <module name="itbuka_service_vip" options="-parameters" />
+    </option>
+  </component>
+</project>

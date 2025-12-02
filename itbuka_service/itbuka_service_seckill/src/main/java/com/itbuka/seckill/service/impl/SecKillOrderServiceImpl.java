@@ -70,15 +70,18 @@ public class SecKillOrderServiceImpl implements SecKillOrderService {
             redisTemplate.delete("Inventory_" + order.getProductId());
         }
 
+
         //获取redis key
         Date date = new Date();
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd ");
         String format = simpleDateFormat.format(date);
         SimpleDateFormat simple = new SimpleDateFormat("HH");
         Integer hour = Integer.valueOf(simple.format(date));
+
         if (hour%2 != 0) {
             hour = hour-1;
         }
+
         //获取秒杀商品
         SeckillProduct seckillProduct = JSONObject.parseObject(JSON.toJSONString(redisTemplate.boundHashOps(format + hour + ":00").get(order.getProductId())), SeckillProduct.class);
         order.setType(2);
@@ -87,6 +90,7 @@ public class SecKillOrderServiceImpl implements SecKillOrderService {
         order.setStatus(0);
         customMessageSender.sendMessage(RabbitConfig.SECKILL_EXCHANGE,"",JSON.toJSONString(order
         ));
-         return true;
+
+        return true;
     }
 }

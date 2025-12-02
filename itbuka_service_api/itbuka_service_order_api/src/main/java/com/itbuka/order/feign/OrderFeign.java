@@ -16,5 +16,4 @@ public interface OrderFeign {
      */
     @PostMapping("/Order/selectList")
      Result<List<Order>> select(@RequestBody Order iOrder);
-
 }

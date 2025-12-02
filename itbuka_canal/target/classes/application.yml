@@ -1,0 +1,14 @@
+canal:
+  client:
+    instances:
+      example:
+        host: 192.168.88.139
+        port: 11111
+        batch-size: 1000
+spring:
+  rabbitmq:
+    host: 192.168.88.139
+  application:
+      name: canal
+server:
+  port: 6667
